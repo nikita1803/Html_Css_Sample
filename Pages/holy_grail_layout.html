@@ -1,0 +1,50 @@
+<!doctype html>
+<title>Example</title>
+<style>
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+}
+#main > nav, 
+#main > aside {
+  flex: 0 0 20vw;
+  background: beige;
+}
+#main > nav {
+  order: -1;
+}
+header, footer {
+  background: yellowgreen;
+  height: 20vh;
+  
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}
+</style>
+<body>
+  <header><ul>
+    <li style="display: inline;"><a href="#home">Home</a></li>
+    <li style="display: inline;" ><a href="#news">News</a></li>
+    <li style="display: inline;"><a href="#contact">Contact</a></li>
+    <li style="display: inline;"><a href="#about">About</a></li>
+  </ul></header>
+  <div id="main">
+    <article>When it comes to the ‘official version’, so to speak, of food blogging, the culinary magazines are on top. This is literary the case with Food52, which ranks amongst the gods of the social media food show with no less than 2.7m followers on Instagram. Like all the respected magazines out there, Food52 has its “how to” perks – we can assure you, you won’t get enough of it.</article>
+    <nav>Left Side Bar</nav>
+    <aside>Right Side bar</aside>
+  </div>
+  <footer><div >Copyright © Nikita rai</div></footer>
+</body>

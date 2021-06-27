@@ -1,0 +1,55 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="col-1"> <li><a href="#home">Home</a></li>
+    <li  ><a href="#news">News</a></li>
+    <li ><a href="#contact">Contact</a></li>
+    <li ><a href="#about">About</a></li></nav>
+  <div class="col-2">
+  	<header>I don’t even have to tell you what restaurants these taglines come from, because you already know! A good tagline can become part of your restaurant’s identity, almost as much as your name and logo.</header>
+    <main class="content">
+    <article>When it comes to the ‘official version’, so to speak, of food blogging, the culinary magazines are on top. This is literary the case with Food52, which ranks amongst the gods of the social media food show with no less than 2.7m followers on Instagram. Like all the respected magazines out there, Food52 has its “how to” perks – we can assure you, you won’t get enough of it.</article>
+    <aside>Right side Bar</aside>
+    </main>
+  	<footer>Copyright © Nikita rai</footer>
+  </div>
+</body>
